@@ -1,0 +1,49 @@
+/* list tabs */
+
+.list-view{
+    padding-top: 4.236em;
+    padding-bottom: 2em;
+
+}
+
+.list-view .tabs{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.list-tab{
+
+    padding: 20px;
+}
+.list-tab p{
+    font-family: var(--font-family-body);
+    text-align: center;
+    width: 150px;
+    padding: 15px;
+    margin: 0;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+.list-tab .active{
+    background-color: yellow;
+    border-color: yellow;
+    color: red;
+}
+
+/* list container */
+
+.list-container{
+    margin-bottom: 60px;
+}
+
+.list-wrapper{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.list-wrapper img{
+    width: 245px;
+    height: 280px;
+    object-fit: cover;
+}
