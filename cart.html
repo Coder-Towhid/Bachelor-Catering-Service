@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="/">Home</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+            </ul>
+  
+            <ul class="d-flex ms-auto navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign Up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <section class="h-100 h-custom" style="background-color: #d2c9ff;">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12">
+              <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                <div class="card-body p-0">
+                  <div class="row g-0">
+                    <div class="col-lg-8">
+                      <div class="p-5">
+                        <div class="d-flex justify-content-between align-items-center mb-5">
+                          <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
+                          <h6 class="mb-0 text-muted">3 items</h6>
+                        </div>
+                        <hr class="my-4">
+      
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="https://rumkisgoldenspoon.com/wp-content/uploads/2021/05/Bhuna-khichuri-recipe.jpg"
+                              class="img-fluid rounded-3" alt="Breakfast">
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-3">
+                            <h6 class="text-muted">Breakfast</h6>
+                            <h6 class="text-black mb-0">Kichuri</h6>
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+      
+                            <input id="form1" min="0" name="quantity" value="1" type="number"
+                              class="form-control form-control-sm" />
+      
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h6 class="mb-0">€ 44.00</h6>
+                          </div>
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                          </div>
+                        </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="https://www.deshcatering.com/wp-content/uploads/2020/06/beef-tehari-desh-catering-service-provider-company-dhaka.jpeg"
+                              class="img-fluid rounded-3" alt="Lunch">
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-3">
+                            <h6 class="text-muted">Lunch</h6>
+                            <h6 class="text-black mb-0">Tehari</h6>
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+      
+                            <input id="form1" min="0" name="quantity" value="1" type="number"
+                              class="form-control form-control-sm" />
+      
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h6 class="mb-0">€ 44.00</h6>
+                          </div>
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                          </div>
+                        </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRei0MNH7tFxpQOPw5gbnvmtjLZFcf2FefrHA&usqp=CAU"
+                              class="img-fluid rounded-3" alt="dinner">
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-3">
+                            <h6 class="text-muted">Dinner</h6>
+                            <h6 class="text-black mb-0">Vat Dal</h6>
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+      
+                            <input id="form1" min="0" name="quantity" value="1" type="number"
+                              class="form-control form-control-sm" />
+      
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h6 class="mb-0">€ 44.00</h6>
+                          </div>
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                          </div>
+                        </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="pt-5">
+                          <h6 class="mb-0"><a href="#!" class="text-body"><i
+                                class="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 bg-grey">
+                      <div class="p-5">
+                        <h3 class="fw-bold mb-5 mt-2 pt-1">Summary</h3>
+                        <hr class="my-4">
+      
+                        <div class="d-flex justify-content-between mb-4">
+                          <h5 class="text-uppercase">items 3</h5>
+                          <h5>€ 132.00</h5>
+                        </div>
+      
+                        <h5 class="text-uppercase mb-3">Shipping</h5>
+      
+                        <div class="mb-4 pb-2">
+                          <select class="select">
+                            <option value="1">Standard-Delivery- €5.00</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">Four</option>
+                          </select>
+                        </div>
+      
+                        <h5 class="text-uppercase mb-3">Give code</h5>
+      
+                        <div class="mb-5">
+                          <div class="form-outline">
+                            <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Examplea2">Enter your code</label>
+                          </div>
+                        </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="d-flex justify-content-between mb-5">
+                          <h5 class="text-uppercase">Total price</h5>
+                          <h5>€ 137.00</h5>
+                        </div>
+      
+                        <button type="button" class="btn btn-dark btn-block btn-lg"
+                          data-mdb-ripple-color="dark">Check Out</button>
+      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-section">
+        <div class="container">
+          <div class="middle-portion">
+            <div class="row">
+              <div class="col-lg-4 col-md-5 col-sm-6 col-12">
+                <a href="./index.html">
+                  <figure class="footer-logo">
+                    <img
+                      src="./assets/images/ePayeer-01.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </figure>
+                </a>
+                <p class="text-size-16 footer-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisc ing elitsed do
+                  eiusmod tempororem ipsum dolor sit am econsect
+                  ametconsectetetur.
+                </p>
+                <figure class="mb-0 payment-icon">
+                  <img
+                    src="https://html.designingmedia.com/repay/assets/images/payment-card.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </figure>
+              </div>
+              <div
+                class="col-lg-1 col-md-1 col-sm-12 col-12 d-lg-block d-none"
+              ></div>
+              <div class="col-lg-2 col-md-3 col-sm-12 col-12 d-md-block d-none">
+                <div class="links">
+                  <h4 class="heading">Important Link</h4>
+                  <hr class="line" />
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a
+                        href="./index.html"
+                        class="text-size-16 text text-decoration-none"
+                        >Home</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./about.html"
+                        class="text-size-16 text text-decoration-none"
+                        >About Us</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./service.html"
+                        class="text-size-16 text text-decoration-none"
+                        >Services</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./contact.html"
+                        class="text-size-16 text text-decoration-none"
+                        >Contact</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./pricing.html"
+                        class="text-size-16 text text-decoration-none"
+                        >Pricing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./faq.html"
+                        class="text-size-16 text text-decoration-none"
+                        >FAQ</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-12 col-12 d-lg-block d-none">
+                <div class="links">
+                  <h4 class="heading">Support</h4>
+                  <hr class="line" />
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a
+                        href="./contact.html"
+                        class="text-size-16 text text-decoration-none"
+                        >Support</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./pricing.html"
+                        class="text-size-16 text text-decoration-none"
+                        >Plan</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./service.html"
+                        class="text-size-16 text text-decoration-none"
+                        >Benefits</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./team.html"
+                        class="text-size-16 text text-decoration-none"
+                        >Testimonial</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./comingsoon.html"
+                        class="text-size-16 text text-decoration-none"
+                        >Coming Soon</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./team.html"
+                        class="text-size-16 text text-decoration-none"
+                        >Members</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-sm-block">
+                <div class="icon">
+                  <h4 class="heading">Get in Touch</h4>
+                  <hr class="line" />
+                  <ul class="list-unstyled mb-0">
+                    <li class="text-size-16 text">
+                      Email:
+                      <a
+                        href="mailto:info@repay.com"
+                        class="mb-0 text text-decoration-none text-size-16"
+                        >info@epayeer.com</a
+                      >
+                    </li>
+                    <li class="text-size-16 text">
+                      Phone:
+                      <a
+                        href="tel:+4733378901"
+                        class="mb-0 text text-decoration-none text-size-16"
+                        >+1 234 567 89 0 0</a
+                      >
+                    </li>
+                    <li class="text-size-16 text1">
+                      Fax:
+                      <a
+                        href="tel:+198765432199"
+                        class="mb-0 text text-decoration-none text-size-16"
+                        >+1 (987) 654 321 9 9</a
+                      >
+                    </li>
+                    <li class="social-icons">
+                      <div class="circle">
+                        <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+                      </div>
+                      <div class="circle">
+                        <a href="#"><i class="ph-fill ph-twitter-logo"></i></a>
+                      </div>
+                      <div class="circle">
+                        <a href="#"><i class="ph-fill ph-tiktok-logo"></i></a>
+                      </div>
+                      <div class="circle">
+                        <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-size-16">
+                Copyright @2023 OSTECH. All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    
+</body>
+</html>
