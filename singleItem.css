@@ -3,13 +3,16 @@
 /* ======= single item ============= */
 
 .single-item{
+    height: 100%;
     margin: 60px 0;
 }
 
 
 
 .single-image img{
-    width: 570px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
     margin-right: 0px;
     float: left;
     display: block;
@@ -60,4 +63,9 @@
 .addCart i{
     font-size: 1.3rem;
     font-weight: var(--font-weight-extra-bold);
+}
+@media (max-width: 767px){
+    .product_title{
+        margin-top: 2rem;
+    }
 }
